@@ -1,0 +1,38 @@
+.nav {
+  background-color: var(--darker-grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+
+  &__heading {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1.5rem;
+
+    &__span {
+      font-weight: 600;
+    }
+  }
+
+  &__anchor {
+    background-color: var(--grey);
+    border-radius: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 250ms;
+    will-change: background-color;
+
+    &__img {
+      width: 2.8rem;
+      display: block;
+    }
+  }
+
+  &__anchor:hover {
+    background-color: var(--orange);
+  }
+}

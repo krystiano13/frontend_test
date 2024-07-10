@@ -1,3 +1,5 @@
+@import 'nav';
+
 :root {
   --darker-grey: #0b0c10;
   --dark-grey: #15161a;
@@ -7,6 +9,10 @@
   --light-grey: #a1a7b5;
   --orange: #e88301;
   --dark-orange: #cd7400;
+}
+
+html {
+    font-size: 16px;
 }
 
 *,*::before,*::after {
