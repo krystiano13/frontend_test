@@ -1,0 +1,17 @@
+:root {
+  --darker-grey: #0b0c10;
+  --dark-grey: #15161a;
+  --grey: #303030;
+  --white: #fefefe;
+  --bg-grey: #2a2d36;
+  --light-grey: #a1a7b5;
+  --orange: #e88301;
+  --dark-orange: #cd7400;
+}
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
