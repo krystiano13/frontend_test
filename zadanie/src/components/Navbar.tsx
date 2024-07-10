@@ -7,9 +7,9 @@ export function Navbar() {
       <NavLink className="nav__anchor" to="/">
         <img className="nav__anchor__img" src={logo} alt="HTML5 logo" />
       </NavLink>
-      <h1 className="nav__heading">
-        Zadanie <span className="nav__heading__span">Rekrutacyjne</span>
-      </h1>
+      <p className="nav__p">
+        Zadanie <span className="nav__p__span">Rekrutacyjne</span>
+      </p>
     </nav>
   );
 }

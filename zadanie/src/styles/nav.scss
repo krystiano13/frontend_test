@@ -5,10 +5,19 @@
   align-items: center;
   padding: 1.2rem;
 
-  &__heading {
+  @media screen and (min-width: 1200px) {
+    padding-left: 4.2rem;
+    padding-right: 4.2rem;
+  }
+
+  &__p {
     color: var(--white);
     font-weight: 300;
     font-size: 1.5rem;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 2rem;
+    }
 
     &__span {
       font-weight: 600;
@@ -19,6 +28,11 @@
     background-color: var(--grey);
     border-radius: 100%;
     padding: 1rem;
+
+    @media screen and (min-width: 1200px) {
+      padding: 1.1rem;
+    }
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +41,12 @@
     will-change: background-color;
 
     &__img {
-      width: 2.8rem;
+      width: 2.9rem;
+
+      @media screen and (min-width: 1200px) {
+        width: 3.2rem;
+      }
+
       display: block;
     }
   }
