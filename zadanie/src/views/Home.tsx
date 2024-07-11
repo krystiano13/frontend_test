@@ -1,3 +1,7 @@
 export function Home() {
-  return <></>;
+  return (
+    <div className="content">
+      <h1 className="content__heading">Nagłówek H1</h1>
+    </div>
+  );
 }

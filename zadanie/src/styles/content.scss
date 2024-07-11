@@ -1,0 +1,36 @@
+.content {
+  width: 100vw;
+  height: auto;
+  background-color: var(--bg-grey);
+  flex: 1;
+
+  &__heading {
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--white);
+    width: auto;
+    position: relative;
+    font-weight: 400;
+    font-size: 2.5rem;
+
+    @media screen and (min-width: 960px) {
+        font-size: 2.75rem;
+    }
+  }
+
+  &__heading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    background-color: var(--white);
+    width: 40%;
+    left: 30%;
+    margin-top: 0.25rem;
+
+    @media screen and (min-width: 960px) {
+      width: 12%;
+      left: 44%;
+    }
+  }
+}
