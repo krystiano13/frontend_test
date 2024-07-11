@@ -8,7 +8,7 @@ export function Footer() {
           <p className="footer__box_wrapper__text__p">IS</p>
           <p className="footer__box_wrapper__text__p">AWESOME</p>
         </div>
-      </div>
+      </div>  
     </footer>
   );
 }
