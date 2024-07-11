@@ -11,7 +11,7 @@
     width: auto;
     position: relative;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
 
     @media screen and (min-width: 960px) {
         font-size: 2.75rem;
@@ -24,8 +24,8 @@
     position: absolute;
     height: 1px;
     background-color: var(--white);
-    width: 40%;
-    left: 30%;
+    width: 36%;
+    left: 32%;
     margin-top: 0.25rem;
 
     @media screen and (min-width: 960px) {

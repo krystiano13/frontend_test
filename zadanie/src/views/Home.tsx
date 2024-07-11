@@ -2,6 +2,38 @@ export function Home() {
   return (
     <div className="content">
       <h1 className="content__heading">Nagłówek H1</h1>
+      <section className="content__first_block">
+        <h2>BLOK PIERWSZY</h2>
+        <div className="content__first_block__option">
+          <input type="radio" />
+          <label>Opcja pierwsza</label>
+        </div>
+        <div className="content__first_block__option">
+          <input type="radio" />
+          <label>Opcja druga</label>
+        </div>
+        <div className="content__first_block__option">
+          <input type="radio" />
+          <label>Opcja losowa</label>
+        </div>
+      </section>
+      <section className="content__second_block">
+        <h2>BLOK DRUGI</h2>
+        <button>ZASTĄP</button>
+        <button>DOKLEJ</button>
+      </section>
+      <section className="content__last_block">
+        <h2>BLOK Z DŁUGĄ NAZWĄ, KTÓRA SAMA SIĘ PRZYTNIE ...</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+          dolor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vestibulum venenatis ut quam a sollicitudin. Vivamus hendrerit dictum
+          sem nec bibendum. Maecenas imperdiet eget lorem at pulvinar. Nullam
+          consectetur massa vel mi sagittis euismod id a quam. Etiam sagittis,
+          enim eget mollis bibendum, ante justo laoreet enim, at ullamcorper
+          neque diam nec risus.
+        </p>
+      </section>
     </div>
   );
 }
