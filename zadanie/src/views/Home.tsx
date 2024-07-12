@@ -16,6 +16,27 @@ export function Home() {
     }
   }
 
+  function replace() {
+    if (option === "") return;
+
+    switch (option) {
+      case "one":
+        setContent([data.array[0]]);
+        break;
+      case "two":
+        setContent([data.array[1]]);
+        break;
+      case "rand":
+        const min = 2;
+        const max = 5;
+        const randomValue = Math.floor(Math.random() * (max - min + 1) + min);
+        setContent([data.array[randomValue]]);
+        break;
+      default:
+        return;
+    }
+  }
+
   return (
     <div className="content">
       <h1 className="content__heading">Nagłówek H1</h1>
@@ -52,7 +73,7 @@ export function Home() {
         <section className="content__blocks__second_block">
           <h2>BLOK DRUGI</h2>
           <div className="content__blocks__second_block__btns">
-            <button>
+            <button onClick={replace}>
               <span>ZASTĄP</span>
             </button>
             <button>
