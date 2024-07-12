@@ -45,16 +45,16 @@ export function Home() {
     switch (option) {
       case "one":
         index = 0;
-      break;
+        break;
       case "two":
         index = 1;
-      break;
+        break;
       case "rand":
         const min = 2;
         const max = 5;
         const randomValue = Math.floor(Math.random() * (max - min + 1) + min);
         index = randomValue;
-      break;
+        break;
     }
 
     if (!content.some((item) => item.id === data.array[index].id)) {
@@ -112,7 +112,7 @@ export function Home() {
           <h2>BLOK Z DŁUGĄ NAZWĄ, KTÓRA SAMA SIĘ PRZYTNIE ...</h2>
           <p>
             {content.map((item) => (
-              <span>{item.text}</span>
+              <span key={item.id}>{item.text}</span>
             ))}
           </p>
         </section>
