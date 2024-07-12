@@ -37,6 +37,33 @@ export function Home() {
     }
   }
 
+  function append() {
+    if (option === "") return;
+
+    let index = 0;
+
+    switch (option) {
+      case "one":
+        index = 0;
+      break;
+      case "two":
+        index = 1;
+      break;
+      case "rand":
+        const min = 2;
+        const max = 5;
+        const randomValue = Math.floor(Math.random() * (max - min + 1) + min);
+        index = randomValue;
+      break;
+    }
+
+    if (!content.some((item) => item.id === data.array[index].id)) {
+      setContent((prev) => [...prev, data.array[index]]);
+    } else {
+      alert("Nie można dokleić danych");
+    }
+  }
+
   return (
     <div className="content">
       <h1 className="content__heading">Nagłówek H1</h1>
@@ -76,7 +103,7 @@ export function Home() {
             <button onClick={replace}>
               <span>ZASTĄP</span>
             </button>
-            <button>
+            <button onClick={append}>
               <span>DOKLEJ</span>
             </button>
           </div>
