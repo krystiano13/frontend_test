@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export function Home() {
   return (
     <div className="content">
@@ -34,16 +36,8 @@ export function Home() {
         <section className="content__blocks__last_block">
           <h2>BLOK Z DŁUGĄ NAZWĄ, KTÓRA SAMA SIĘ PRZYTNIE ...</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-            dolor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Vestibulum venenatis ut quam a sollicitudin. Vivamus hendrerit
-            dictum sem nec bibendum. Maecenas imperdiet eget lorem at pulvinar.
-            Nullam consectetur massa vel mi sagittis euismod id a quam. Etiam
-            sagittis, enim eget mollis bibendum, ante justo laoreet enim, at
-            ullamcorper neque diam nec risus.Aenean accumsan massa at massa
-            facilisis, a commodo mi sagittis. Etiam feugiat pretium enim, sit
-            amet vehicula ipsum euismod a. Aenean suscipit quam at diam
-            imperdiet, id aliquet lorem vehicula.
+            
+              
           </p>
         </section>
       </div>

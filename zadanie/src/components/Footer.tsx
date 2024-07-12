@@ -9,6 +9,10 @@ export function Footer() {
           <p className="footer__box_wrapper__text__p">AWESOME</p>
         </div>
       </div>  
+      <p className="footer__logo">
+        nabthat
+      </p>
+      <button>Pokaż</button>
     </footer>
   );
 }
