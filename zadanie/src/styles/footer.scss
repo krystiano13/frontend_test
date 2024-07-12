@@ -33,6 +33,7 @@
             justify-content: center;
             align-items: start;
             flex-direction: column;
+            transition: color 250ms;
 
             &__p {
                 margin: 0;
@@ -45,5 +46,9 @@
         border-color: var(--dark-orange);
         transform: rotate(360deg);
         position: fixed;
+    }
+
+    &__box_wrapper:hover &__box_wrapper__text {
+        color: var(--light-grey);
     }
 }
