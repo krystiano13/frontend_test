@@ -3,6 +3,8 @@
   background-color: var(--dark-grey);
   border-top: solid black 1px;
   height: 8.5rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
   overflow: hidden;
   z-index: 0;
 
@@ -10,14 +12,16 @@
   justify-content: space-between;
   align-items: center;
 
+  position: fixed;
+  bottom: 0px;
+
   @media screen and (min-width: 960px) {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 
   &__dropdown {
-    z-index: 2
-    position fixed;
+    z-index: 2 position fixed;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -61,7 +65,7 @@
           width: 1.7ch;
 
           .img {
-            opacity : 1;
+            opacity: 1;
           }
 
           .img_hover {
@@ -81,7 +85,7 @@
 
         div {
           .img {
-            opacity : 0;
+            opacity: 0;
           }
 
           .img_hover {

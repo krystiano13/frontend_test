@@ -13,7 +13,7 @@ export function Footer() {
           <p className="footer__box_wrapper__text__p">AWESOME</p>
         </div>
       </div>
-      <p className="footer__logo">nabthat</p>
+      <div className="footer__logo">nabthat</div>
       <div className="footer__dropdown">
         <button tabIndex={0} className="footer__dropdown__btn">
           <span className="footer__dropdown__btn__span">
