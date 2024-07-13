@@ -3,6 +3,7 @@
   background-color: var(--bg-grey);
   flex: 1;
   overflow-y: auto;
+  z-index: 1;
 
   @media screen and (min-width: 1440px) {
     overflow-y: hidden;
@@ -159,6 +160,7 @@
         @media screen and (min-width: 1025px) {
           margin-top: 4rem;
           flex-direction: row;
+          justify-content: center;
           gap: 2rem;
         }
 
@@ -221,8 +223,8 @@
 
       @media screen and (orientation: portrait) and (max-height: 740px) {
         p {
-          margin-top: .75rem;
-          font-size: .75rem;
+          margin-top: 0.75rem;
+          font-size: 0.75rem;
         }
       }
 
@@ -241,6 +243,7 @@
         padding: 0rem;
         p {
           font-size: 1.05rem;
+          margin-top: 5rem;
         }
       }
 
@@ -255,6 +258,12 @@
           margin-top: 5rem;
         }
       }
+
+      @media screen and (min-width: 1280px) {
+        p {
+          margin-top: 3rem;
+        }
+      }
     }
   }
 
@@ -267,7 +276,7 @@
     font-weight: 400;
     font-size: 2.25rem;
 
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1367px) {
       font-size: 2.75rem;
       margin-top: 5rem;
     }
