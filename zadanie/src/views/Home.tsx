@@ -42,23 +42,40 @@ export function Home() {
 
     let index = 0;
 
+    let arr: Content[] = [];
+
     switch (option) {
       case "one":
         index = 0;
+        arr = data.array;
         break;
       case "two":
         index = 1;
+        arr = data.array;
         break;
       case "rand":
-        const min = 2;
-        const max = 5;
+        const array = data.array.filter(
+          (item) => item.id !== 1 && item.id !== 2
+        );
+        const new_array = array.filter(
+          (item) => !content.some((el) => el.id === item.id)
+        );
+
+        if (new_array.length <= 0) {
+          alert("Nie można dokleić danych");
+          break;
+        }
+
+        const min = 0;
+        const max = new_array.length - 1;
         const randomValue = Math.floor(Math.random() * (max - min + 1) + min);
         index = randomValue;
+        arr = new_array;
         break;
     }
 
-    if (!content.some((item) => item.id === data.array[index].id)) {
-      setContent((prev) => [...prev, data.array[index]]);
+    if (!content.some((item) => item.id === arr[index].id)) {
+      setContent((prev) => [...prev, arr[index]]);
     } else {
       alert("Nie można dokleić danych");
     }
