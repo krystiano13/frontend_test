@@ -118,7 +118,7 @@
       }
     }
 
-    &__btn:focus {
+    &__btn:focus, &__menu:hover {
       border-color: var(--white);
       color: var(--white);
     }

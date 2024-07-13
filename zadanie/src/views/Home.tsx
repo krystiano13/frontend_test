@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import data from "../data/data.json";
 
 type Content = {
@@ -7,8 +7,22 @@ type Content = {
 };
 
 export function Home() {
-  const [content, setContent] = useState<Content[]>([data.array[0]]);
+  const [dataArray, setDataArray] = useState<Content[]>([]);
+  const [content, setContent] = useState<Content[]>([]);
   const [option, setOption] = useState<string>("");
+
+  useEffect(() => {
+    if (localStorage.getItem("data")) {
+      const arr = JSON.parse(localStorage.getItem("data") as string);
+      setDataArray(arr);
+      setContent([arr[0]]);
+    } else {
+      const arr = data.array;
+      setDataArray(arr);
+      setContent([arr[0]]);
+      localStorage.setItem("data", JSON.stringify(data.array));
+    }
+  }, []);
 
   function checkOption(e: React.ChangeEvent<HTMLInputElement>, option: string) {
     if (e.target.checked) {
@@ -128,9 +142,8 @@ export function Home() {
         <section className="content__blocks__last_block">
           <h2>BLOK Z DŁUGĄ NAZWĄ, KTÓRA SAMA SIĘ PRZYTNIE ...</h2>
           <p>
-            {content.map((item) => (
-              <span key={item.id}>{item.text}</span>
-            ))}
+            {content &&
+              content.map((item) => <span key={item.id}>{item.text}</span>)}
           </p>
         </section>
       </div>
