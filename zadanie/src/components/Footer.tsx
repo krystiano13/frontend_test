@@ -12,11 +12,17 @@ export function Footer() {
         </div>
       </div>
       <p className="footer__logo">nabthat</p>
-      <button className="footer__btn">
-        <span className="footer__btn__span">
-          POKAŻ <img src={arrow} alt="dropdown arrow" />
-        </span>
-      </button>
+      <div className="footer__dropdown">
+        <button tabIndex={0} className="footer__dropdown__btn">
+          <span className="footer__dropdown__btn__span">
+            POKAŻ <img src={arrow} alt="dropdown arrow" />
+          </span>
+        </button>
+        <div className="footer__dropdown__menu">
+          <button>ZRESETUJ USTAWIENIA</button>
+          <button>POKAŻ DANE OSOBOWE</button>
+        </div>
+      </div>
     </footer>
   );
 }
