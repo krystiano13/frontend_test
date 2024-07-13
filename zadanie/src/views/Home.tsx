@@ -7,18 +7,15 @@ type Content = {
 };
 
 export function Home() {
-  const [dataArray, setDataArray] = useState<Content[]>([]);
   const [content, setContent] = useState<Content[]>([]);
   const [option, setOption] = useState<string>("");
 
   useEffect(() => {
     if (localStorage.getItem("data")) {
       const arr = JSON.parse(localStorage.getItem("data") as string);
-      setDataArray(arr);
       setContent([arr[0]]);
     } else {
       const arr = data.array;
-      setDataArray(arr);
       setContent([arr[0]]);
       localStorage.setItem("data", JSON.stringify(data.array));
     }
