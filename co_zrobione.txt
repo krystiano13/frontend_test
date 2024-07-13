@@ -6,6 +6,6 @@ Dodatkowe:
 - Mobile first.
 - Przy doklejaniu treści w przypadku niemożliwości spełnienia warunku by była unikalna wyświetlić stosowny komunikat (np. alert/dialog/modal).
 - Button w footerze ("pokaż") wysuwający ramkę bez użycia JSa.
-- Rezultat prac wrzucić do podglądu na jakąś darmową platformę (vercel).
+- Rezultat prac wrzucić do podglądu na jakąś darmową platformę (https://frontend-test-u6lv.vercel.app/).
 Zadanie na 6:
 - Zrobiłem tylko zaczytywanie i zapisywanie do localStorage
