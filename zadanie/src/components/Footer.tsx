@@ -1,4 +1,6 @@
 import arrow from "../assets/down-arrow.png";
+import rightArrow from "../assets/right-arrow.png";
+import rightArrow2 from "../assets/rightArrow2.png";
 
 export function Footer() {
   return (
@@ -19,8 +21,28 @@ export function Footer() {
           </span>
         </button>
         <div className="footer__dropdown__menu">
-          <button>ZRESETUJ USTAWIENIA</button>
-          <button>POKAŻ DANE OSOBOWE</button>
+          <button>
+            <div>
+              <img className="img" src={rightArrow} alt="dropdown arrow" />
+              <img
+                className="img_hover"
+                src={rightArrow2}
+                alt="dropdown arrow"
+              />
+            </div>
+            ZRESETUJ USTAWIENIA
+          </button>
+          <button>
+            <div>
+              <img className="img" src={rightArrow} alt="dropdown arrow" />
+              <img
+                className="img_hover"
+                src={rightArrow2}
+                alt="dropdown arrow"
+              />
+            </div>
+            POKAŻ DANE OSOBOWE
+          </button>
         </div>
       </div>
     </footer>
