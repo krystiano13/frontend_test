@@ -1,0 +1,11 @@
+Główne:
+- Wszystko zostało zrobione
+Dodatkowe:
+- Osadzenie całego zadania w jakimś JSowym frameworku (React z Typescript).
+- CSS IS AWESOME w footerze - po najechaniu myszką ramka (bez tekstu) powinna wykonać animowany obrót.
+- Mobile first.
+- Przy doklejaniu treści w przypadku niemożliwości spełnienia warunku by była unikalna wyświetlić stosowny komunikat (np. alert/dialog/modal).
+- Button w footerze ("pokaż") wysuwający ramkę bez użycia JSa.
+- Rezultat prac wrzucić do podglądu na jakąś darmową platformę (vercel).
+Zadanie na 6:
+- Zrobiłem tylko zaczytywanie i zapisywanie do localStorage
